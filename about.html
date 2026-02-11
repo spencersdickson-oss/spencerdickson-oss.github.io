@@ -1,1 +1,93 @@
-<PASTE ABOUT HTML HERE>
+<PASTE ABOUT HTML HERE><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Your Name</span>
+      </a>
+      <nav class="navlinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="kicker">About</div>
+      <h1>Short bio</h1>
+      <p>
+        Write a crisp story here: what you’re good at, what you’ve done, and what you want next.
+        Keep it concrete. Keep it human.
+      </p>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Strengths</h2>
+        <ul>
+          <li>Structured troubleshooting (symptoms → causes → fixes)</li>
+          <li>Process improvement with measurable results</li>
+          <li>Clear communication and documentation</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Tools</h2>
+        <ul>
+          <li>Lean basics (5S, standard work, waste reduction)</li>
+          <li>Data analysis (spreadsheets, basic metrics)</li>
+          <li>Documentation (SOPs, work instructions)</li>
+        </ul>
+      </section>
+
+      <section class="card full">
+        <h2>Timeline (example)</h2>
+        <table class="table" aria-label="Timeline">
+          <thead>
+            <tr>
+              <th style="width: 140px;">Year</th>
+              <th>Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2022</td>
+              <td>Graduation + early career foundation.</td>
+            </tr>
+            <tr>
+              <td>2023–2025</td>
+              <td>Production support, reliability wins, cross-functional projects.</td>
+            </tr>
+            <tr>
+              <td>Now</td>
+              <td>Looking for a role with ownership, impact, and growth.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small">
+      © <span id="year"></span> Your Name.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
