@@ -1,0 +1,16 @@
+Create folders in your repo:
+assets/projects/datsun-roadster-1967/01-before/
+assets/projects/datsun-roadster-1967/02-restoration/
+assets/projects/datsun-roadster-1967/03-after/
+
+Default filenames expected by the page:
+01-before/before-01.jpg
+01-before/before-02.jpg
+02-restoration/restoration-01.jpg
+02-restoration/restoration-02.jpg
+02-restoration/restoration-03.jpg
+02-restoration/restoration-04.jpg
+03-after/after-01.jpg
+03-after/after-02.jpg
+
+If your filenames differ, edit car-restoration.html and hobbies.html and update the <img src="..."> paths.
