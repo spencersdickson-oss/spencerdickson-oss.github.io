@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Your Name</title>
+  <title>Contact | Spencer Dickson</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Contact Spencer Dickson." />
 </head>
 <body>
   <header>
     <div class="container nav">
       <a class="brand" href="index.html">
         <span class="logo" aria-hidden="true"></span>
-        <span>Your Name</span>
+        <span>Spencer Dickson</span>
       </a>
       <nav class="navlinks" aria-label="Main">
         <a href="index.html">Home</a>
@@ -26,54 +27,39 @@
   <main class="container">
     <section class="hero">
       <div class="kicker">Contact</div>
-      <h1>Let’s talk</h1>
+      <h1>Let’s connect</h1>
       <p>
-        GitHub Pages is static hosting, so this form uses <strong>mailto:</strong> by default.
-        If you want a real form backend later, use Formspree / Netlify Forms / a simple serverless endpoint.
+        Email is best. If you’re a recruiter, include role title, location, shift expectations (if applicable), and timeline.
       </p>
+
+      <div class="buttonrow">
+        <a class="btn primary" href="assets/Spencer_Dickson_Resume.pdf" download>Download Resume (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/spencersdickson/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </section>
 
     <div class="grid">
       <section class="card">
         <h2>Direct</h2>
-        <p><strong>Email:</strong> yourname@email.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Profile link</a></p>
-        <p class="small">Replace with your real contact info.</p>
+        <p><strong>Email:</strong> <a href="mailto:spencersdickson@gmail.com">spencersdickson@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:951-992-3386">951-992-3386</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/spencersdickson/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/spencersdickson/</a></p>
       </section>
 
       <section class="card">
         <h2>Message</h2>
-        <form action="mailto:yourname@email.com" method="post" enctype="text/plain">
-          <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" autocomplete="name" required />
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-          </div>
-
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-
+        <form action="mailto:spencersdickson@gmail.com" method="post" enctype="text/plain">
+          <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required /></div>
+          <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+          <div><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
           <button class="btn primary" type="submit">Send</button>
-          <div class="small">Opens your email app with the message.</div>
+          <div class="small">This opens your default email app.</div>
         </form>
       </section>
     </div>
   </main>
 
-  <footer>
-    <div class="container small">
-      © <span id="year"></span> Your Name.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer><div class="container small">© <span id="year"></span> Spencer Dickson.</div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

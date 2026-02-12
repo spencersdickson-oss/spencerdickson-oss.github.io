@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Your Name</title>
+  <title>Projects | Spencer Dickson</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Selected manufacturing engineering projects: reliability, casting simulation, aerospace process engineering, and weld monitoring." />
 </head>
 <body>
   <header>
     <div class="container nav">
       <a class="brand" href="index.html">
         <span class="logo" aria-hidden="true"></span>
-        <span>Your Name</span>
+        <span>Spencer Dickson</span>
       </a>
       <nav class="navlinks" aria-label="Main">
         <a href="index.html">Home</a>
@@ -26,80 +27,69 @@
   <main class="container">
     <section class="hero">
       <div class="kicker">Projects</div>
-      <h1>Selected work</h1>
+      <h1>Work samples (scope • decisions • outcomes)</h1>
       <p>
-        Add 3–6 projects with outcomes (time saved, defects reduced, uptime improved, cost avoided).
-        Link to repos, docs, or photos when possible.
+        These are written in the format recruiters and hiring managers scan for: the problem, what I did, and what changed.
+      </p>
+      <div class="buttonrow">
+        <a class="btn" href="assets/Spencer_Dickson_Resume.pdf" download>Download Resume (PDF)</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+      <p class="small" style="margin-top:10px;">
+        Transparency note: images shown are representative; proprietary line/component imagery is excluded where required.
       </p>
     </section>
 
     <div class="grid">
-      <article class="card">
-        <h2>Project A — Reliability Improvement</h2>
-        <p><strong>Outcome:</strong> Reduced downtime by X% by fixing root causes and improving PMs.</p>
+      <article class="card full">
+        <h2>1) High-Speed Beverage Can End Manufacturing Reliability</h2>
+        <p class="small"><strong>Context:</strong> Anheuser-Busch — Aluminum soda &amp; beer can ends (lids)</p>
+        <p><strong>Engineering problem:</strong> unplanned downtime, scrap generation, and quality instability on 24/7 high-speed presses supplying major beverage brands.</p>
         <ul>
-          <li>Identified failure modes and prioritized fixes.</li>
-          <li>Updated work instructions and inspection checks.</li>
-          <li>Documented results and trained operators.</li>
+          <li>Supported high-speed can-end presses operating at extremely high stroke rates in a Tier-1 supplier environment.</li>
+          <li>Performed RCA on mechanical and electrical press faults; identified repeat failure modes impacting uptime and downstream filling operations.</li>
+          <li>Updated preventive maintenance intervals, inspection points, and operator work instructions while supporting live production.</li>
         </ul>
-        <div class="buttonrow">
-          <a class="btn" href="#" aria-label="Project A link">Details</a>
-        </div>
+        <p><strong>Results (resume-safe):</strong> improved uptime consistency, reduced scrap through earlier defect detection, and increased production stability on continuous-run equipment.</p>
       </article>
 
       <article class="card">
-        <h2>Project B — Scrap Reduction</h2>
-        <p><strong>Outcome:</strong> Cut scrap by X% through earlier detection + process adjustment.</p>
+        <h2>2) Casting Design &amp; Solidification Simulation</h2>
+        <p><strong>Engineering problem:</strong> mitigate shrinkage/porosity/incomplete fill risk before tooling.</p>
         <ul>
-          <li>Added in-process checks and clear pass/fail criteria.</li>
-          <li>Closed the loop with maintenance and quality.</li>
-          <li>Tracked weekly metrics and sustained gains.</li>
+          <li>Designed casting geometry with gating and risers.</li>
+          <li>Ran flow + solidification simulations to predict fill behavior, hot spots, and shrink risk.</li>
+          <li>Iterated design based on simulation feedback to validate manufacturability before pours.</li>
         </ul>
-        <div class="buttonrow">
-          <a class="btn" href="#" aria-label="Project B link">Details</a>
-        </div>
+        <p><strong>Value:</strong> DFM + virtual validation to reduce scrap/cost; data-driven iteration with ProCAST-style tooling.</p>
+      </article>
+
+      <article class="card">
+        <h2>3) Aerospace Investment Casting Process Engineering</h2>
+        <p class="small"><strong>Context:</strong> Consolidated Precision Products (CPP)</p>
+        <p><strong>Engineering problem:</strong> aerospace-grade requirements where defects are unacceptable.</p>
+        <ul>
+          <li>Supported investment casting processes for aerospace components under strict quality constraints.</li>
+          <li>Evaluated process steps impacting dimensional accuracy and defect formation.</li>
+          <li>Supported production troubleshooting and continuous improvement initiatives with documentation discipline.</li>
+        </ul>
+        <p class="small"><strong>Note:</strong> specific components not shown due to proprietary/export-controlled considerations.</p>
       </article>
 
       <article class="card full">
-        <h2>Project list (compact)</h2>
-        <table class="table" aria-label="Project list">
-          <thead>
-            <tr>
-              <th>Project</th>
-              <th>Type</th>
-              <th>Impact</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Maintenance Standard Work</td>
-              <td>Process</td>
-              <td>More consistent troubleshooting + faster handoffs</td>
-            </tr>
-            <tr>
-              <td>TPM / PM Revision</td>
-              <td>Reliability</td>
-              <td>Fewer repeat failures and better uptime stability</td>
-            </tr>
-            <tr>
-              <td>Tooling / Fixture Upgrade</td>
-              <td>Manufacturing</td>
-              <td>Reduced variation and improved repeatability</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2>4) Welding Process Monitoring &amp; Quality Control</h2>
+        <p><strong>Engineering problem:</strong> inconsistent weld quality and limited traceability across production welding operations.</p>
+        <ul>
+          <li>Implemented a Miller weld monitoring system to capture voltage, current, and time.</li>
+          <li>Used the data to identify out-of-spec conditions, improve consistency, and support traceability/documentation.</li>
+          <li>Worked with operators to integrate monitoring without disrupting throughput.</li>
+        </ul>
+        <p><strong>Result:</strong> improved process control and faster feedback on weld conditions.</p>
       </article>
     </div>
   </main>
 
-  <footer>
-    <div class="container small">
-      © <span id="year"></span> Your Name.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer><div class="container small">© <span id="year"></span> Spencer Dickson.</div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

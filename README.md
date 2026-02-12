@@ -1,18 +1,21 @@
-# Personal Portfolio Website
+# Spencer Dickson — Portfolio (GitHub Pages)
 
-This repository contains a multi-page static portfolio website built with **HTML and CSS**, designed to be hosted using **GitHub Pages**.
-
-## Pages Included
-- `index.html` – Home / overview
-- `about.html` – Background and skills
-- `projects.html` – Selected projects and experience
-- `hobbies.html` – Interests outside of work
-- `contact.html` – Contact information and message form
-- `style.css` – Shared styling for all pages
-
-## Hosting
-This site is hosted using **GitHub Pages** directly from the `main` branch (root directory).
+This repository hosts my personal portfolio website, built as a **multi-page static site** (HTML + CSS) and deployed via **GitHub Pages**.
 
 ## Live Site
-Once GitHub Pages finishes deploying, the site is available at:
+- https://spencersdickson-oss.github.io/
 
+## Resume Download
+The “Download Resume (PDF)” button links to:
+- `assets/Spencer_Dickson_Resume.pdf`
+
+To update your resume later, replace that file and push to `main`.
+
+## Update / Deploy
+1. Edit files
+2. Commit and push to `main`
+3. GitHub Pages redeploys automatically
+
+## Contact
+- spencersdickson@gmail.com
+- https://www.linkedin.com/in/spencersdickson/
