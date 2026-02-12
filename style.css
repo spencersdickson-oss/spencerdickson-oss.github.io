@@ -481,3 +481,33 @@ footer{
   box-shadow: 0 4px 14px rgba(0,0,0,0.35) !important;
   display: inline-block !important;
 }
+/* ---- Logo badge (fix SVG scaling/clipping) ---- */
+.logo-badge{
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden; /* critical: prevents giant SVG spill */
+  border: 1px solid rgba(0,0,0,0.10);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.logo-badge .logo-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  /* critical: makes oversized viewBox behave */
+  object-fit: contain;
+  object-position: center;
+
+  /* remove padding so it can fully fit */
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
