@@ -3,7 +3,7 @@
 This repository hosts my personal portfolio website, built as a **multi-page static site** (HTML + CSS) and deployed via **GitHub Pages**.
 
 ## Live Site
-- https://spencersdickson-oss.github.io/
+- [https://spencersdickson-oss.github.io/manufacturing_engineer.io/index.html]
 
 ## Resume Download
 The “Download Resume (PDF)” button links to:
