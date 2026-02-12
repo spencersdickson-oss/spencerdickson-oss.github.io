@@ -89,4 +89,68 @@ Add the following CSS block to the bottom of your existing style.css:
   .media-stack img{
     height: 220px;
   }
+}Add the following CSS block to the bottom of your existing style.css:
+
+/* === Step 2: Home hero + CTA polish === */
+
+/* Sticky header */
+.site-header.sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(11,15,23,.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(34,48,74,.6);
 }
+
+/* Nav CTA */
+.nav-cta{
+  margin-left: auto;
+}
+
+/* Nav hover + active states */
+.navlinks a{
+  position: relative;
+}
+.navlinks a:hover{
+  color: var(--accent);
+}
+.navlinks a[aria-current="page"]{
+  color: var(--accent);
+}
+.navlinks a[aria-current="page"]::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+/* Hero refinements */
+.hero h1{
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.15;
+}
+.hero .lead{
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 780px;
+}
+
+/* Snapshot list */
+.snapshot{
+  margin-top: 12px;
+  padding-left: 18px;
+}
+.snapshot li{
+  margin: 8px 0;
+}
+
+/* Button hover polish */
+.btn:hover{
+  transform: translateY(-1px);
+}
+
