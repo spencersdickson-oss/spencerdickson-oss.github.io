@@ -294,6 +294,28 @@ footer{
   border-bottom: 1px solid var(--line);
 }
 .nav{ display:flex; align-items:center; justify-content:space-between; gap: 12px; }
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+.logo-badge{
+  width: 40px;
+  height: 40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex: 0 0 auto;
+}
+.logo-img{
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display:block;
+}
 .navlinks{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
 .nav-cta{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end; }
 .btn.ghost{
