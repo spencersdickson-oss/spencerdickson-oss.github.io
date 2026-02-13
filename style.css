@@ -284,99 +284,53 @@ footer{
 }
 
 
-/* ===== Header / Sticky Nav ===== */
-.site-header{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(10,14,22,.82);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+/* ---------- Project 2 media (hover-to-play videos + 3-card row) ---------- */
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:12px;
 }
-.nav{ display:flex; align-items:center; justify-content:space-between; gap: 12px; }
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight: 700;
-  color: var(--text);
-  text-decoration: none;
+@media (max-width: 860px){
+  .video-grid{ grid-template-columns:1fr; }
 }
-.logo-badge{
-  width: 40px;
-  height: 40px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex: 0 0 auto;
-}
-.logo-img{
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
+.video-card video{
+  width:100%;
+  height:auto;
   display:block;
+  border-radius:14px;
+  background:#000;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  border:1px solid rgba(120, 180, 255, 0.18);
 }
-.navlinks{ display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
-.nav-cta{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end; }
-.btn.ghost{
-  background: transparent;
-  border: 1px solid var(--line);
-  color: var(--text);
+.video-card figcaption{
+  margin-top:8px;
+  font-size:0.9rem;
+  line-height:1.35;
+  color: rgba(220, 230, 255, 0.78);
 }
-.btn.ghost:hover{ border-color: rgba(124,92,255,.7); }
 
-/* ===== Project Media (carousel + stack) ===== */
-.proj-media{ min-width: 0; }
-.media-carousel{
-  display:flex;
-  gap:14px;
-  overflow:auto;
-  padding: 2px 2px 10px;
-  scroll-snap-type: x mandatory;
+/* Three-card media row */
+.media-grid{
+  display:grid;
+  gap:12px;
 }
-.media-carousel figure{
-  margin: 0;
-  min-width: 280px;
-  max-width: 360px;
-  scroll-snap-align: start;
-  border:1px solid var(--line);
-  border-radius: 14px;
-  overflow:hidden;
-  background: rgba(255,255,255,.02);
+.media-grid.three{
+  grid-template-columns:repeat(3, minmax(0,1fr));
 }
-.media-carousel img{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+@media (max-width: 980px){
+  .media-grid.three{ grid-template-columns:1fr; }
+}
+.media-grid img{
+  width:100%;
+  height:auto;
   display:block;
+  border-radius:14px;
+  border:1px solid rgba(120, 180, 255, 0.18);
 }
-.media-carousel figcaption{
-  padding: 10px 12px;
-  font-size: 13px;
-  color: var(--muted);
-  border-top:1px solid var(--line);
+.media-grid figcaption{
+  margin-top:8px;
+  font-size:0.9rem;
+  line-height:1.35;
+  color: rgba(220, 230, 255, 0.78);
 }
-.media-stack{
-  display:none;
-  gap: 12px;
-}
-.media-note{ margin-top: 10px; }
-
-.video-frame{
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
-  background: #000;
-}
-.video-frame iframe{
-  position:absolute; inset:0;
-  width:100%; height:100%;
-  border:0;
-}
-
-/* Show stacked media on very narrow screens */
-@media (max-width: 640px){
-  .media-carousel figure{ min-width: 86%; }
-}
-
-/* If carousel is not usable, stack is available for assistive fallback (kept hidden by default) */
