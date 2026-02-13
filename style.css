@@ -286,3 +286,198 @@ footer{
   color:var(--muted);
   font-size:13px;
 }
+
+/* ==========================================================
+   Hobbies + Roadster pages — missing layout utilities
+   (Added to support grid layouts & media on secondary pages)
+   ========================================================== */
+
+/* Generic grid utilities */
+.grid{ display:grid; gap:16px; }
+.third{ grid-column: span 4; }
+@media (max-width: 980px){
+  .third{ grid-column: 1 / -1; }
+}
+
+/* Button row */
+.buttonrow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:12px;
+}
+
+/* Two-up media (before/after, etc.) */
+.media-two{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+@media (max-width: 720px){
+  .media-two{ grid-template-columns: 1fr; }
+}
+.media-two figure{
+  margin:0;
+  background:#0b0f14;
+  border:1px solid rgba(34,48,74,.75);
+  border-radius:12px;
+  overflow:hidden;
+}
+.media-two img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.media-two figcaption{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Highlight badges */
+.badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.badge{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border:1px solid rgba(34,48,74,.6);
+  border-radius:999px;
+  background: rgba(18,26,38,.55);
+  color: var(--text);
+  font-size:13px;
+}
+.badge .dot{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background: var(--accent2);
+  box-shadow: 0 0 0 3px rgba(94,240,198,.12);
+}
+
+/* Gallery grid */
+.gallery{
+  margin-top:12px;
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:12px;
+}
+@media (max-width: 980px){
+  .gallery{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px){
+  .gallery{ grid-template-columns: 1fr; }
+}
+.gallery figure{
+  margin:0;
+  background:#0b0f14;
+  border:1px solid rgba(34,48,74,.75);
+  border-radius:12px;
+  overflow:hidden;
+}
+.gallery img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  display:block;
+}
+.gallery figcaption{
+  padding:10px 10px 12px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Responsive iframe ratio helper */
+.ratio{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#0b0f14;
+  border:1px solid rgba(34,48,74,.75);
+  border-radius:12px;
+  overflow:hidden;
+}
+.ratio iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* Simple table styling */
+.table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+  overflow:hidden;
+  border-radius:12px;
+  border:1px solid rgba(34,48,74,.6);
+}
+.table th, .table td{
+  text-align:left;
+  padding:12px 12px;
+  border-bottom:1px solid rgba(34,48,74,.45);
+}
+.table thead th{
+  background: rgba(18,26,38,.55);
+  color: var(--text);
+  font-weight:700;
+}
+.table tbody td{
+  color: var(--muted);
+}
+.table tbody tr:last-child td{ border-bottom:0; }
+
+/* Two-tile Hobbies layout */
+.hobby-grid{
+  margin-top:16px;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:16px;
+}
+@media (max-width: 980px){
+  .hobby-grid{ grid-template-columns: 1fr; }
+}
+.hobby-card{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.hobby-kicker{
+  color:var(--accent2);
+  font-weight:700;
+  letter-spacing:.6px;
+  font-size:12px;
+  text-transform:uppercase;
+}
+.hobby-title{
+  margin:8px 0 6px;
+  font-size:18px;
+}
+.hobby-desc{ margin:0; color:var(--muted); }
+.hobby-media{ display:block; margin-top:4px; }
+.hobby-thumb{
+  width:100%;
+  aspect-ratio:16/9;
+  background:#0b0f14 center/cover no-repeat;
+  border:1px solid rgba(34,48,74,.75);
+  border-radius:12px;
+  overflow:hidden;
+}
+.hobby-media:hover .hobby-thumb,
+.hobby-media:hover .media-two figure{
+  border-color: rgba(122,162,255,.55);
+  box-shadow: 0 0 0 3px rgba(122,162,255,.12);
+}
+.hobby-note{
+  margin-top:14px;
+  color:var(--muted);
+}

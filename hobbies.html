@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hobbies | Spencer Dickson</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Hands-on interests — car restoration, fitness, and learning projects." />
+  <meta name="description" content="Hands-on interests — automotive restoration and custom woodworking." />
 </head>
 <body>
-    <header>
+  <header>
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Home">
         <span class="logo-badge" aria-hidden="true">
@@ -32,7 +32,6 @@
     </div>
   </header>
 
-
   <main class="container">
     <section class="hero">
       <div class="kicker">Hobbies</div>
@@ -40,40 +39,57 @@
       <p>I like projects that reinforce how I work professionally: diagnose, iterate, document, and finish strong.</p>
     </section>
 
-    <div class="grid">
-      <section class="card full">
-        <h2>Featured: 1967 Datsun Roadster 1600 restoration</h2>
-        <p>Long-term mechanical and electrical restoration project with before/after, build photos, and a running video.</p>
-
-        <div class="media-two" aria-label="Preview images">
-          <figure>
-            <a href="car-restoration.html">
-              <img src="assets/projects/datsun-roadster-1967/01-before/before-01.jpg" alt="Datsun Roadster before restoration preview" loading="lazy" />
-            </a>
-            <figcaption><strong>Before:</strong> early condition (project start).</figcaption>
-          </figure>
-          <figure>
-            <a href="car-restoration.html">
-              <img src="assets/projects/datsun-roadster-1967/03-after/after-01.jpg" alt="Datsun Roadster after restoration preview" loading="lazy" />
-            </a>
-            <figcaption><strong>After:</strong> completed running condition.</figcaption>
-          </figure>
+    <section class="hobby-grid" aria-label="Hobby projects">
+      <article class="card hobby-card">
+        <div class="hobby-top">
+          <div class="hobby-kicker">Automotive Restoration</div>
+          <h2 class="hobby-title">1967 Datsun Roadster 1600</h2>
+          <p class="hobby-desc">
+            Full frame-off restoration: powder-coated frame, rebuilt original parts, and hands-on mechanical/electrical troubleshooting.
+            Painted during the build. It’s running and driving today.
+          </p>
         </div>
+
+        <a class="hobby-media" href="car-restoration.html" aria-label="Open Roadster restoration page">
+          <div class="media-two">
+            <figure>
+              <img src="assets/projects/datsun-roadster-1967/01-before/before-01.jpg" alt="Datsun Roadster before restoration" loading="lazy" />
+              <figcaption><strong>Before:</strong> early condition (project start).</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/projects/datsun-roadster-1967/03-after/after-01.jpg" alt="Datsun Roadster after restoration" loading="lazy" />
+              <figcaption><strong>After:</strong> completed running condition.</figcaption>
+            </figure>
+          </div>
+        </a>
 
         <div class="buttonrow">
-          <a class="btn primary" href="car-restoration.html">View the full restoration story</a>
-          <a class="btn" href="assets/Spencer_Dickson_Resume.pdf" download>Download Resume (PDF)</a>
+          <a class="btn primary" href="car-restoration.html">View the restoration story</a>
+        </div>
+      </article>
+
+      <article class="card hobby-card">
+        <div class="hobby-top">
+          <div class="hobby-kicker">Custom Woodworking</div>
+          <h2 class="hobby-title">Handcrafted Wedding Keepsake Box</h2>
+          <p class="hobby-desc">
+            One-off gift build featuring clean joinery, wood-burned personalization, and an illuminated interior reveal.
+            Concept → build → finish → presentation.
+          </p>
         </div>
 
-        <p class="small" style="margin-top:10px;">
-          Put your Datsun photos under <code>assets/projects/datsun-roadster-1967/</code> to make these previews work.
-        </p>
-      </section>
+        <a class="hobby-media" href="woodworking.html" aria-label="Open woodworking project page">
+          <div class="hobby-thumb" role="img" aria-label="Wooden keepsake box thumbnail"
+               style="background-image:url('assets/projects/woodworking/wood-box-thumb.png');"></div>
+        </a>
 
-      <section class="card third"><h2>Fitness</h2><p>Consistency-first training — strength work and staying sharp for long days.</p></section>
-      <section class="card third"><h2>Learning projects</h2><p>Small electronics and process-improvement experiments to deepen systems understanding.</p></section>
-      <section class="card third"><h2>Diagnostics mindset</h2><p>Whether it’s equipment or wiring, I enjoy isolating failure modes and making fixes repeatable.</p></section>
-    </div>
+        <div class="buttonrow">
+          <a class="btn primary" href="woodworking.html">View the woodworking project</a>
+        </div>
+      </article>
+    </section>
+
+    <p class="small hobby-note">Additional hands-on projects and restorations are ongoing and will be added over time.</p>
   </main>
 
   <footer><div class="container small">© <span id="year"></span> Spencer Dickson.</div></footer>
