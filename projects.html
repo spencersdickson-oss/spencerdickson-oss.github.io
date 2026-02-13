@@ -8,29 +8,23 @@
   <meta name="description" content="Manufacturing & process engineering projects — aerospace investment casting, casting simulation, weld monitoring, CAD assembly, and high-speed manufacturing." />
 </head>
 <body>
-  <header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Home">
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
       <span class="logo-badge" aria-hidden="true">
-        <img class="logo-img" src="assets/brand/sd-gear.svg" alt="SD gear logo" />
-      </span>
-      <span>Spencer Dickson</span>
-    </a>
-
-    <nav class="navlinks" aria-label="Primary">
-      <a  href="about.html">About</a>
-      <a class="active" href="projects.html" aria-current="page">Projects</a>
-      <a  href="hobbies.html">Hobbies</a>
-      <a  href="contact.html">Contact</a>
-    </nav>
-
-    <div class="nav-cta">
-      <a class="btn ghost" href="contact.html">Contact</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/spencersdickson/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn primary" href="assets/Spencer_Dickson_Resume.pdf" download>Download Resume</a>
+  <img class="logo-img" src="assets/brand/sd-gear.svg" alt="SD gear logo" />
+</span>
+        <span>Spencer Dickson</span>
+      </a>
+      <nav class="navlinks" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
   <main class="container wide">
     <section class="hero">
@@ -95,41 +89,37 @@
           </div>
 
           <aside class="proj-media" aria-label="Project 1 media">
-  <!-- Carousel-style: horizontal scroll -->
-  <div class="media-carousel">
-    <figure>
-      <a href="assets/projects/project-01-investment-casting/wax-tree-gating.webp" target="_blank" rel="noopener">
-        <img src="assets/projects/project-01-investment-casting/wax-tree-gating.webp" alt="Complex wax assembly with gating for aerospace investment casting" loading="lazy" />
-      </a>
-      <figcaption>Complex wax assembly + gating (representative)</figcaption>
-    </figure>
-
-    <figure>
-      <a href="assets/projects/project-01-investment-casting/slurry-dip.webp" target="_blank" rel="noopener">
-        <img src="assets/projects/project-01-investment-casting/slurry-dip.webp" alt="Investment casting slurry/shell building process" loading="lazy" />
-      </a>
-      <figcaption>Slurry dip / shell building (representative)</figcaption>
-    </figure>
-
-    <figure>
-      <a href="assets/projects/project-01-investment-casting/fpi-linear-indication.jpg" target="_blank" rel="noopener">
-        <img src="assets/projects/project-01-investment-casting/fpi-linear-indication.jpg" alt="Example fluorescent penetrant linear indication (crack indication)" loading="lazy" />
-      </a>
-      <figcaption>Linear indication example (FPI)</figcaption>
-    </figure>
-  </div>
-
-  <!-- Stacked fallback for narrow devices / no horizontal scroll -->
-  <div class="media-stack" aria-hidden="true">
-    <img src="assets/projects/project-01-investment-casting/wax-tree-gating.webp" alt="" loading="lazy" />
-    <img src="assets/projects/project-01-investment-casting/slurry-dip.webp" alt="" loading="lazy" />
-    <img src="assets/projects/project-01-investment-casting/fpi-linear-indication.jpg" alt="" loading="lazy" />
-  </div>
-
-  <p class="media-note small">
-    Visuals are representative examples (not proprietary customer parts).
-  </p>
-</aside>
+            <!-- Carousel-style: horizontal scroll -->
+            <div class="media-carousel">
+              <figure>
+                <a href="assets/projects/rep-investment-casting/casting-shell.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-investment-casting/casting-shell.jpg" alt="Representative investment casting shell (process-focused)" loading="lazy" />
+                </a>
+                <figcaption>Representative shell mold / ceramic investment.</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-investment-casting/gating.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-investment-casting/gating.jpg" alt="Representative gating and feeding system" loading="lazy" />
+                </a>
+                <figcaption>Gating/feeding geometry (representative).</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-investment-casting/foundry-process.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-investment-casting/foundry-process.jpg" alt="Representative foundry process environment" loading="lazy" />
+                </a>
+                <figcaption>Foundry workflow context (representative).</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-investment-casting/inspection.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-investment-casting/inspection.jpg" alt="Representative inspection or dimensional control context" loading="lazy" />
+                </a>
+                <figcaption>Dimensional control / inspection context.</figcaption>
+              </figure>
+            </div>
+            <p class="small" style="margin-top:8px;">
+              Replace these files in <code>assets/projects/rep-investment-casting/</code> (or update paths) with your approved representative images.
+            </p>
+          </aside>
         </div>
       </section>
 
@@ -176,47 +166,53 @@
             </p>
           </div>
 
-          <aside class="proj-media" aria-label="Project 2 media">
-            <!-- Video first -->
-            <div class="ratio">
-              <!-- TODO: replace VIDEO_ID_SIM with your YouTube/Vimeo ID, or host mp4 and switch to <video> -->
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/VIDEO_ID_SIM"
-                title="ProCAST simulation screen recording"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-            <p class="small" style="margin-top:8px;"><strong>Video 1:</strong> ProCAST simulation (fill + solidification).</p>
-
-            <div class="ratio" style="margin-top:12px;">
-              <!-- TODO: replace VIDEO_ID_POUR with your pour video ID -->
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/VIDEO_ID_POUR"
-                title="Physical pour footage"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-            <p class="small" style="margin-top:8px;"><strong>Video 2:</strong> Physical pour / execution footage.</p>
-
-            <!-- Images second -->
-            <div class="media-stack" style="margin-top:12px;">
-              <figure>
-                <a href="assets/projects/procast/still-01.jpg" target="_blank" rel="noreferrer">
-                  <img src="assets/projects/procast/still-01.jpg" alt="ProCAST still image: temperature gradients" loading="lazy" />
-                </a>
-                <figcaption>Temperature gradients (representative still).</figcaption>
+                    <aside class="proj-media" aria-label="Project 2 media">
+            <!-- Videos (muted). Autoplay on hover via JS. -->
+            <div class="video-grid" role="list">
+              <figure class="video-card" role="listitem">
+                <video class="hover-play" muted playsinline loop preload="metadata"
+                  poster="assets/projects/project-02-casting-simulation/fill-temp-simulation-poster.jpg">
+                  <source src="assets/projects/project-02-casting-simulation/fill-temp-simulation.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>Video:</strong> Fill + temperature evolution (ProCAST screen capture).</figcaption>
               </figure>
-              <figure>
-                <a href="assets/projects/procast/still-02.jpg" target="_blank" rel="noreferrer">
-                  <img src="assets/projects/procast/still-02.jpg" alt="ProCAST still image: hot spot identification" loading="lazy" />
-                </a>
-                <figcaption>Hot spot identification (representative still).</figcaption>
+
+              <figure class="video-card" role="listitem">
+                <video class="hover-play" muted playsinline loop preload="metadata"
+                  poster="assets/projects/project-02-casting-simulation/pour-process-poster.jpg">
+                  <source src="assets/projects/project-02-casting-simulation/pour-process.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>Video:</strong> Physical pour / execution footage (muted).</figcaption>
               </figure>
+            </div>
+
+            <!-- Three-card image row -->
+            <div class="media-grid three" style="margin-top:12px;">
               <figure>
-                <a href="assets/projects/procast/still-03.jpg" target="_blank" rel="noreferrer">
-                  <img src="assets/projects/procast/still-03.jpg" alt="ProCAST still image: solidification time comparison" loading="lazy" />
+                <a href="assets/projects/project-02-casting-simulation/temp-distribution-no-riser.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/project-02-casting-simulation/temp-distribution-no-riser.jpg"
+                       alt="Temperature distribution (no riser) — simulation result"
+                       loading="lazy" />
                 </a>
-                <figcaption>Solidification timing comparison after design iteration.</figcaption>
+                <figcaption>Temperature distribution (no riser).</figcaption>
+              </figure>
+
+              <figure>
+                <a href="assets/projects/project-02-casting-simulation/hotspot-identification.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/project-02-casting-simulation/hotspot-identification.jpg"
+                       alt="Hot spot identification — simulation result"
+                       loading="lazy" />
+                </a>
+                <figcaption>Hot spot identification.</figcaption>
+              </figure>
+
+              <figure>
+                <a href="assets/projects/project-02-casting-simulation/riser-size-optimization.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/project-02-casting-simulation/riser-size-optimization.jpg"
+                       alt="Riser size comparison / optimization — simulation result"
+                       loading="lazy" />
+                </a>
+                <figcaption>Riser size comparison / optimization.</figcaption>
               </figure>
             </div>
           </aside>
@@ -266,31 +262,31 @@
           </div>
 
           <aside class="proj-media" aria-label="Project 3 media">
-  <div class="media-carousel">
-    <figure>
-      <a href="assets/projects/project-03-weld-monitoring/miller-dashboard-productivity.jpg" target="_blank" rel="noopener">
-        <img src="assets/projects/project-03-weld-monitoring/miller-dashboard-productivity.jpg" alt="Weld monitoring dashboard showing productivity and utilization metrics" loading="lazy" />
-      </a>
-      <figcaption>Dashboard: productivity + utilization (example UI)</figcaption>
-    </figure>
-
-    <figure>
-      <a href="assets/projects/project-03-weld-monitoring/miller-dashboard-quality.jpg" target="_blank" rel="noopener">
-        <img src="assets/projects/project-03-weld-monitoring/miller-dashboard-quality.jpg" alt="Weld monitoring dashboard showing quality metrics and results" loading="lazy" />
-      </a>
-      <figcaption>Dashboard: quality + out-of-spec trends (example UI)</figcaption>
-    </figure>
-  </div>
-
-  <div class="media-stack" aria-hidden="true">
-    <img src="assets/projects/project-03-weld-monitoring/miller-dashboard-productivity.jpg" alt="" loading="lazy" />
-    <img src="assets/projects/project-03-weld-monitoring/miller-dashboard-quality.jpg" alt="" loading="lazy" />
-  </div>
-
-  <p class="media-note small">
-    Screens shown are representative examples of Miller Insight Centerpoint dashboards.
-  </p>
-</aside>
+            <!-- Static stack (clean, professional) -->
+            <div class="media-stack">
+              <figure>
+                <a href="assets/projects/rep-weld-monitoring/miller-hardware.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-weld-monitoring/miller-hardware.jpg" alt="Representative Miller weld monitoring hardware" loading="lazy" />
+                </a>
+                <figcaption>Miller weld monitoring hardware (representative).</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-weld-monitoring/dashboard-01.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-weld-monitoring/dashboard-01.jpg" alt="Representative dashboard showing weld parameters" loading="lazy" />
+                </a>
+                <figcaption>Dashboard view: voltage/current/time trends (representative).</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-weld-monitoring/dashboard-02.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-weld-monitoring/dashboard-02.jpg" alt="Representative dashboard supporting traceability" loading="lazy" />
+                </a>
+                <figcaption>Traceability / out-of-spec identification (representative).</figcaption>
+              </figure>
+            </div>
+            <p class="small" style="margin-top:8px;">
+              Replace these files in <code>assets/projects/rep-weld-monitoring/</code> (or update paths) with your approved representative images.
+            </p>
+          </aside>
         </div>
       </section>
 
@@ -408,39 +404,36 @@
           </div>
 
           <aside class="proj-media" aria-label="Project 5 media">
-	  <div class="media-carousel">
-	    <figure class="video">
-	      <div class="video-frame" role="group" aria-label="Video: How beverage ends are made">
-	        <iframe
-	          src="https://www.youtube-nocookie.com/embed/nR4Apa78alE"
-	          title="Discover how our Beverage Ends are made"
-	          loading="lazy"
-	          referrerpolicy="strict-origin-when-cross-origin"
-	          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	          allowfullscreen></iframe>
-	      </div>
-	      <figcaption>Process overview video (Crown): beverage ends manufacturing</figcaption>
-	    </figure>
-
-	    <figure>
-	      <a href="assets/projects/project-05-high-speed-manufacturing/end-line-press.jpg" target="_blank" rel="noopener">
-	        <img src="assets/projects/project-05-high-speed-manufacturing/end-line-press.jpg" alt="High-speed can-end manufacturing press line" loading="lazy" />
-	      </a>
-	      <figcaption>High-speed end-making line (representative)</figcaption>
-	    </figure>
-
-	    <figure>
-	      <a href="assets/projects/project-05-high-speed-manufacturing/can-end-easy-open.jpg" target="_blank" rel="noopener">
-	        <img src="assets/projects/project-05-high-speed-manufacturing/can-end-easy-open.jpg" alt="Easy-open can end (beverage end) close-up" loading="lazy" />
-	      </a>
-	      <figcaption>Beverage end detail (easy-open end)</figcaption>
-	    </figure>
-	  </div>
-
-  <p class="media-note small">
-    Images are representative examples of end-making / press equipment.
-  </p>
-</aside>
+            <div class="media-carousel">
+              <figure>
+                <a href="assets/projects/rep-high-speed-manufacturing/press-01.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-high-speed-manufacturing/press-01.jpg" alt="Representative high-speed can end press" loading="lazy" />
+                </a>
+                <figcaption>High-speed production equipment (representative).</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-high-speed-manufacturing/automation-01.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-high-speed-manufacturing/automation-01.jpg" alt="Representative PLC-controlled production line" loading="lazy" />
+                </a>
+                <figcaption>PLC-controlled automation context.</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-high-speed-manufacturing/pneumatic-hydraulic-01.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-high-speed-manufacturing/pneumatic-hydraulic-01.jpg" alt="Representative pneumatic or hydraulic system" loading="lazy" />
+                </a>
+                <figcaption>Pneumatic/hydraulic system context.</figcaption>
+              </figure>
+              <figure>
+                <a href="assets/projects/rep-high-speed-manufacturing/sensors-01.jpg" target="_blank" rel="noreferrer">
+                  <img src="assets/projects/rep-high-speed-manufacturing/sensors-01.jpg" alt="Representative sensors used in automated manufacturing" loading="lazy" />
+                </a>
+                <figcaption>Industrial sensors / detection (representative).</figcaption>
+              </figure>
+            </div>
+            <p class="small" style="margin-top:8px;">
+              Replace these files in <code>assets/projects/rep-high-speed-manufacturing/</code> (or update paths) with your approved representative images.
+            </p>
+          </aside>
         </div>
       </section>
     </div>
@@ -450,5 +443,34 @@
     <div class="container small">© <span id="year"></span> Spencer Dickson.</div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    // Hover-to-play (muted) videos
+    document.querySelectorAll('video.hover-play').forEach((v) => {
+      // Safety: keep muted even if browser toggles it
+      v.muted = true;
+      v.playsInline = true;
+
+      const play = async () => {
+        try { await v.play(); } catch (e) { /* ignore */ }
+      };
+      const stop = () => {
+        v.pause();
+        // Reset to start so hover always feels intentional
+        try { v.currentTime = 0; } catch (e) { /* ignore */ }
+      };
+
+      v.addEventListener('mouseenter', play);
+      v.addEventListener('mouseleave', stop);
+      v.addEventListener('focus', play);
+      v.addEventListener('blur', stop);
+
+      // Touch devices: tap toggles play/pause
+      v.addEventListener('click', () => {
+        if (v.paused) play(); else stop();
+      });
+    });
+  </script>
+
 </body>
 </html>
